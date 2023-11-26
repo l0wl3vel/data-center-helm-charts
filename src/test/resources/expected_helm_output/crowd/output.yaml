@@ -8,7 +8,7 @@ metadata:
     helm.sh/chart: crowd-1.11.0
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
-    app.kubernetes.io/version: "5.1.2"
+    app.kubernetes.io/version: "5.2.1"
     app.kubernetes.io/managed-by: Helm
 ---
 # Source: crowd/templates/config-jvm.yaml
@@ -20,7 +20,7 @@ metadata:
     helm.sh/chart: crowd-1.11.0
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
-    app.kubernetes.io/version: "5.1.2"
+    app.kubernetes.io/version: "5.2.1"
     app.kubernetes.io/managed-by: Helm
 data:
   additional_jvm_args: >-
@@ -39,7 +39,7 @@ metadata:
     helm.sh/chart: crowd-1.11.0
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
-    app.kubernetes.io/version: "5.1.2"
+    app.kubernetes.io/version: "5.2.1"
     app.kubernetes.io/managed-by: Helm
   annotations:
 spec:
@@ -62,7 +62,7 @@ metadata:
     helm.sh/chart: crowd-1.11.0
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
-    app.kubernetes.io/version: "5.1.2"
+    app.kubernetes.io/version: "5.2.1"
     app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
@@ -95,7 +95,7 @@ spec:
           command: ["sh", "-c", "(chgrp 2004 /shared-home; chmod g+w /shared-home)"]
       containers:
         - name: crowd
-          image: "atlassian/crowd:5.1.2"
+          image: "atlassian/crowd:5.2.1"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -186,7 +186,7 @@ metadata:
     helm.sh/chart: crowd-1.11.0
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
-    app.kubernetes.io/version: "5.1.2"
+    app.kubernetes.io/version: "5.2.1"
     app.kubernetes.io/managed-by: Helm
 spec:
   containers:
@@ -217,7 +217,7 @@ metadata:
     helm.sh/chart: crowd-1.11.0
     app.kubernetes.io/name: crowd
     app.kubernetes.io/instance: unittest-crowd
-    app.kubernetes.io/version: "5.1.2"
+    app.kubernetes.io/version: "5.2.1"
     app.kubernetes.io/managed-by: Helm
 spec:
   containers:
